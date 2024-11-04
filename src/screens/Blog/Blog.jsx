@@ -1,91 +1,61 @@
-import React, { useEffect } from 'react';
+
+
+import React from 'react';
 import TopNavbar from '../../components/Nav/TopNavbar';
 import Footer from '../../components/Sections/Footer/Footer';
+import frame from "../../assets/blog/frame.png";
+import bg1 from "../../assets/blog/bg1.png";
+import bg2 from "../../assets/blog/bg2.png";
 
+import style from "./Blog.module.css";
 
-import style from "Blog.module.css";
-
-
-export default function CorporateTrainings() {
-
-    const { } = style;
-
-    const cardsData = [
-        {
-            title: "Karachi, Pakistan",
-            imgSrc: karachi,
-            description: "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            title: "Islamabad, Pakistan",
-            imgSrc: islamabad,
-            description: "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            title: "Lahore, Pakistan",
-            imgSrc: Lahore,
-            description: "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            title: "Global",
-            imgSrc: global,
-            description: "Some quick example text to build on the card title and make up the bulk of the card's content."
-        }
-    ];
+export default function Blog() {
+    const { bg_purple } = style;
 
     return (
         <>
-            <TopNavbar />
-            <div className={`container-fluid p-0 `} style={{
-                // backgroundImage: `url(${frame})`,
+            <div className={`container-fluid ${bg_purple}`} style={{
+                backgroundImage: `url(${frame})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}>
-                <div className="container-fluid mt-2 pb-4  pl-lg-4 pr-lg-4">
-                    <div className="row justify-content-center m-0 mt-5 pb-5">
-                        {cardsData.map((card, index) => (
-                            <div
-                                className="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 d-flex justify-content-center"
-                                key={index}
-                            >
-                                <div className="text-center" style={{ width: '100%', maxWidth: '400px' }}>
-                                    <img
-                                        className={`card-img-top ${custom_img}`}
-                                        src={card.imgSrc}
-                                        alt={`Image of ${card.title}`}
-                                        style={{ width: '100%', height: 'auto' }}
-                                    />
-                                    <h5
-                                        className="card-title m-3"
-                                        style={{
-                                            fontFamily: "Barlow, sans-serif",
-                                            fontSize: "30px",
-                                            fontWeight: "400",
-                                        }}
-                                    >
-                                        {card.title}
-                                    </h5>
-                                    <div
-                                        className="card-text"
-                                        style={{
-                                            color: '#160A54',
-                                            fontFamily: "Barlow, sans-serif",
-                                            fontSize: "26px",
-                                            fontWeight: "400",
-                                            cursor: "pointer"
-                                        }}
-                                        onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
-                                        onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
-                                    >
-                                        see open positions
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                <TopNavbar />
+
+                <div className="container py-5 position-relative ml-5 mr-5 pl-5 pr-5 mt-5" style={{
+                   
+                }}>
+                    <img
+                        src={bg1}
+                        className="img-fluid w-100 rounded position-relative "
+                        alt="Secondary background image"
+                        style={{
+                            zIndex: 1,  // This keeps bg1 in the background
+                        }}
+                    />
+                    
+                    <div className="position-absolute bg-white p-3 rounded shadow-sm" style={{
+                        bottom: '85px', left: '170px', right: '650px', zIndex: 3
+                    }}>
+                        <div className="tag badge badge-primary mb-2">
+                            Technology
+                        </div>
+                        <h2 className="title h4 text-dark mb-2">
+                            The Impact of Technology on the Workplace: How Technology is Changing
+                        </h2>
+                        <div className="author d-flex align-items-center text-muted">
+                            <img
+                                src="https://storage.googleapis.com/a1aa/image/xryAnF7624YfHSMAVVjcEe3bulSrKt2ahTvDhgJ1fAJKzQZnA.jpg"
+                                className="rounded-circle mr-2"
+                                alt="Author's profile picture"
+                                width="30" height="30"
+                            />
+                            <span>Jason Francisco</span>
+                            <span className="ml-2">August 20, 2022</span>
+                        </div>
                     </div>
                 </div>
-
             </div>
+
             <Footer />
         </>
     );

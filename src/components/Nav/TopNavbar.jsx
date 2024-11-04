@@ -63,7 +63,7 @@ export default function TopNavbar() {
     { to: "/WhatWeDo", text: "About us" },
     { to: "/BookaRoom", text: "Services" },
     { to: "/Career", text: "Career" },
-    { to: "/", text: "Blog"},
+    { to: "/blog", text: "Blog"},
     { to: "/", text: "Contact us"},
   ];
  
