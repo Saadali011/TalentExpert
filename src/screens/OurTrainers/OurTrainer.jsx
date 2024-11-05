@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 import wave2 from '../../assets/WhatWeDo/wave2.png'
 import WeD2 from '../../assets/WhatWeDo/WeD2.png'
+import WeD3 from '../../assets/WhatWeDo/WeD3.png'
+
 import left1 from '../../assets/join/left1.png';
 import left2 from '../../assets/join/left2.png';
 import left3 from '../../assets/join/left3.png';
@@ -19,6 +21,7 @@ import right5 from '../../assets/join/right5.png';
 import wave3 from '../../assets/WhatWeDo/wave3.png'
 import frame from '../../assets/WhatWeDo/frame.png'
 import frame2 from '../../assets/WhatWeDo/frame2.png'
+import wave1 from '../../assets/WhatWeDo/wave1.png'
 
 
 import InfoCard from "../../screens/InfoCard/InfoCard";
@@ -26,8 +29,11 @@ import { courseInfoCardData, infoCardData } from "../../constant";
 
 import wave from '../../assets/WhatWeDo/wave.png'
 import WeD1 from '../../assets/WhatWeDo/WeD1.png'
+import bell from '../../assets/WhatWeDo/bell.svg'
+
 export default function OurTrainer() {
   const navigate = useNavigate();
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -60,11 +66,11 @@ export default function OurTrainer() {
       },
     ],
   };
+
   const { TrainerContainer } = style;
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // Trigger animations when component mounts
     setAnimate(true);
   }, []);
 
@@ -74,31 +80,44 @@ export default function OurTrainer() {
 
     >
       <div
-           style={{
-            // backgroundColor: '#5A8C75',
-            backgroundImage: `url(${frame2})`,
-            backgroundSize: 'cover',
-            backgroundPosition:"top center",
-            backgroundRepeat: 'no-repeat',
-            padding: 0,
-          }}><InfoCard data={infoCardData} count={false} gradient={false} />
+        style={{
+          // backgroundColor: '#5A8C75',
+          backgroundImage: `url(${frame2})`,
+          backgroundSize: 'cover',
+          backgroundPosition: "top center",
+          backgroundRepeat: 'no-repeat',
+          padding: 0,
+        }}>
+        <InfoCard data={infoCardData} count={false} gradient={false} />
 
-          </div>
-      <div className=" py-2 ">
-        
+      </div>
+      <div className=" py-2  ">
+
         {/* First Row */}
-        <div className="container-fluid mt-5 pl-4 p-sm-0 "
+        <div className="container-fluid mt-5 pl-4  p-sm-0  "
           style={{
             // backgroundColor: '#5A8C75',
-            backgroundImage: `url(${wave})`,
+            backgroundImage: `url(${wave1})`,
             backgroundSize: 'cover',
+            backgroundPosition: "top center",
             backgroundRepeat: 'no-repeat',
             padding: 0,
           }}
         >
-          <div className="row align-items-center pb-5">
-            <div className="col-lg-6 p-0 pl-1 col-md-6 col-sm-12">
-              <img src={WeD1} alt="" className="img-container w-100 pr-5 " />
+          <div className="row align-items-center pb-5 pr-5">
+            <div className="col-lg-6 p-0 pl-4 col-md-6 col-sm-12 ">
+              <img src={WeD3} alt="" className="img-container w-100 pr-5  " />
+
+              <div className=" pl-5">
+                {/* <img src={bell} alt="" 
+              style={{
+                width :"140px",
+               bottom :"0px",
+               right :"40px"
+              }}
+              /> */}
+
+              </div>
             </div>
             {/* <div className="col-1"></div> */}
             <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left ">
@@ -129,17 +148,17 @@ export default function OurTrainer() {
           </div>
         </div>
         {/* Second Row */}
-        <div className="container-fluid mt-5 pl-4 p-sm-0"
+        <div className="container-fluid mt-5 pl-4  p-sm-0 "
           style={{
             // backgroundColor: '#5A8C75',
             backgroundImage: `url(${wave2})`,
             backgroundSize: 'cover',
-            backgroundPosition : "center",
+            backgroundPosition: "center",
             backgroundRepeat: 'no-repeat',
             padding: 0,
           }}>
           <div className="row align-items-center pb-5">
-            <div className="col-lg-6 p-0 pl-1 col-md-6 col-sm-12">
+            <div className="col-lg-6 p-0 pl-4 col-md-6 col-sm-12 ">
               <img src={WeD2} alt="Wed2" className="img-container w-100 pr-5" />
             </div>
             <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left  ">
