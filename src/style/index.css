@@ -755,7 +755,7 @@ body {
   background-color: #008F71 !important;
   border: none;
   color: white;
-  border-radius: 5px;
+  border-radius: 5px; 
   margin-top: 30px;
   padding: 10px;
 }
@@ -764,15 +764,20 @@ body {
  border: none;
  color: white;
  border-radius: 40px;
+ font-size: 19px;
+ font-weight:400;
  margin-top: 30px;
- padding: 3% 6%; 
+ padding: 3.3% 7.6%; 
 }
 .hire_now_btn{
  border: 2px solid #04642D;
  background-color: transparent;
  border-radius: 40px;
  margin-top: 30px;
- padding: 2.7% 6%; 
+ font-size: 20px;
+ font-weight: 500;
+ padding: 2.6% 7.6%; 
+ font-family: 'Barlow', sans-serif;
  color:  #04642D;
 }
 .slider_btn:hover {

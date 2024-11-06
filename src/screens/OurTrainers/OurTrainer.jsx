@@ -21,6 +21,7 @@ import right5 from '../../assets/join/right5.png';
 import wave3 from '../../assets/WhatWeDo/wave3.png'
 import frame from '../../assets/WhatWeDo/frame.png'
 import frame2 from '../../assets/WhatWeDo/frame2.png'
+import frame7 from '../../assets/WhatWeDo/frame7.png'
 import wave1 from '../../assets/WhatWeDo/wave1.png'
 
 
@@ -29,6 +30,8 @@ import { courseInfoCardData, infoCardData } from "../../constant";
 
 import wave from '../../assets/WhatWeDo/wave.png'
 import WeD1 from '../../assets/WhatWeDo/WeD1.png'
+import WeD9 from '../../assets/WhatWeDo/WeD9.png'
+
 import bell from '../../assets/WhatWeDo/bell.svg'
 
 export default function OurTrainer() {
@@ -76,189 +79,186 @@ export default function OurTrainer() {
 
   return (
     <div
-      className="container-sm-fluid p-sm-0 m-sm-0 bg-sm-none "
+      className="container-sm-fluid py-5  m-sm-0 bg-sm-none "
 
     >
-      <div
+      <div className="container-sm-fluid "
         style={{
           // backgroundColor: '#5A8C75',
           backgroundImage: `url(${frame2})`,
-          backgroundSize: 'cover',
-          backgroundPosition: "top center",
+          // backgroundSize: 'cover',
+          // backgroundPosition: "top center",
+          backgroundSize: 'contain',
+          backgroundPosition: "bottom",
           backgroundRepeat: 'no-repeat',
           padding: 0,
         }}>
         <InfoCard data={infoCardData} count={false} gradient={false} />
 
       </div>
-      <div className=" py-2  ">
 
-        {/* First Row */}
-        <div className="container-fluid mt-5 pl-4  p-sm-0  "
-          style={{
-            // backgroundColor: '#5A8C75',
-            backgroundImage: `url(${wave1})`,
-            backgroundSize: 'cover',
-            backgroundPosition: "top center",
-            backgroundRepeat: 'no-repeat',
-            padding: 0,
-          }}
-        >
-          <div className="row align-items-center pb-5 pr-5">
-            <div className="col-lg-6 p-0 pl-4 col-md-6 col-sm-12 ">
-              <img src={WeD3} alt="" className="img-container w-100 pr-5  " />
 
-              <div className=" pl-5">
-                {/* <img src={bell} alt="" 
-              style={{
-                width :"140px",
-               bottom :"0px",
-               right :"40px"
-              }}
-              /> */}
+      {/* First Row */}
+      <div className="container-fluid mt-sm-5 pl-4  p-sm-0  "
+        style={{
+          // backgroundColor: '#5A8C75',
+          backgroundImage: `url(${frame7})`,
+          backgroundSize: 'contain',
+          backgroundPosition: "center top",
+          // backgroundSize: 'cover',
+          // backgroundPosition: "top right",
+          backgroundRepeat: 'no-repeat',
+          padding: 0,
+        }}
+      >
+        <div className="row align-items-center pb-5 pr-sm-5 ">
+          <div className="col-lg-6  p-0 pl-sm-4 col-md-6 col-sm-12 ">
+            <img src={WeD9} alt="" className="img-container w-100 pr-sm-5  " />
+          </div>
+          {/* <div className="col-1"></div> */}
+          <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left  ">
+            <h1 style={{ fontWeight: 400, fontSize: "3.3rem" }} className='pl-sm-2 mb-sm-5 pb-sm-5'>  <span style={{ color: '#160A54' }}>Find your   </span><span style={{ color: '#04642D' }}> next hire</span></h1>
 
-              </div>
+            <div className="row mt-3 font20 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4  pl-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18 pl-3"> Access a curated pool of qualified, vetted candidates</p></div>
             </div>
-            {/* <div className="col-1"></div> */}
-            <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left ">
-              <h1 className="mb-5" style={{ fontWeight: 400, fontSize: "3.2rem" }}>  <span style={{ color: '#160A54' }}>Find your   </span><span style={{ color: '#04642D' }}> next hire</span></h1>
-              <div className="row mt-3 font20 align-items-center">
-                <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
-                <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18"> Access a curated pool of qualified, vetted candidates</p></div>
-              </div>
-              <div className="row mt-3 font20 align-items-center">
-                <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
-                <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18"> Share your job requirements to get instant matches</p></div>
-              </div>
-              <div className="row mt-3 font20 align-items-center">
-                <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
-                <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18"> Share your job requirements to get instant matches</p></div>
-              </div>
-              <div className="row mt-3 font20 align-items-center">
-                <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
-                <div className="col-11">
-                  <p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18"> Collaborate with our recruitment specialists for
-                    seamless hiring</p>
 
-                </div>
+            <div className="row mt-3 font20 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-5 pr-5  pl-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18 pl-3"> Share your job requirements to get instant matches</p></div>
+            </div>
+            <div className="row mt-3 font20 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-5 pr-5 pl-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
+              <div className="col-11">
+                <p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18 pl-3"> Collaborate with our recruitment specialists for
+                  seamless hiring</p>
+
               </div>
-              <button className="Preview_candidates_btn mr-4 mt-5" onClick={() => navigate('/#coursesWeOffer')} >Preview candidates</button>
-              <button className="hire_now_btn" onClick={() => navigate('/#coursesWeOffer')} >Hire Now</button>
+            </div> 
+            <div className="row pl-sm-5 pb-5">
+            <button className="Preview_candidates_btn  mr-4 mt-5" onClick={() => navigate('/#coursesWeOffer')} >Preview candidates</button>
+            <button className="hire_now_btn   mt-5" onClick={() => navigate('/#coursesWeOffer')} >Hire now</button>
             </div>
           </div>
         </div>
-        {/* Second Row */}
-        <div className="container-fluid mt-5 pl-4  p-sm-0 "
-          style={{
-            // backgroundColor: '#5A8C75',
-            backgroundImage: `url(${wave2})`,
-            backgroundSize: 'cover',
-            backgroundPosition: "center",
-            backgroundRepeat: 'no-repeat',
-            padding: 0,
-          }}>
-          <div className="row align-items-center pb-5">
-            <div className="col-lg-6 p-0 pl-4 col-md-6 col-sm-12 ">
-              <img src={WeD2} alt="Wed2" className="img-container w-100 pr-5" />
-            </div>
-            <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left  ">
-              <h1 className="mb-5" style={{ fontWeight: 400, fontSize: "3.3rem" }}>  <span style={{ color: '#160A54' }}>Make the  </span><span style={{ color: '#04642D' }}> career move <br />
-                you want</span></h1>
-              <div className="row mt-3 font20 align-items-center">
-                <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
-                <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18"> Get instant job recommendations tailored to your skills and goals</p></div>
-              </div>
-              <div className="row mt-3 font20 align-items-center">
-                <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
-                <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18"> Gain exposure to a range of companies and job types: fully
-                  remote, <br /> hybrid or on-site, and contract or permanent</p></div>
-              </div>
-              <div className="row mt-3 font20 align-items-center">
-                <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
-                <div className="col-11">
-                  <p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18"> Access competitive pay, benefits, and free online training and
-                    <br />development</p>
+      </div>
 
-                </div>
+
+      {/* Second Row */}
+      <div className="container-fluid  pl-4  p-sm-0 "
+        style={{
+          // backgroundColor: '#5A8C75',
+          backgroundImage: `url(${wave2})`,
+          backgroundSize: 'contain',
+          backgroundPosition: "center top",
+          // backgroundSize: 'cover',
+          // backgroundPosition: "center",
+          backgroundRepeat: 'no-repeat',
+          padding: 0,
+        }}>
+        <div className="row align-items-center pb-5">
+          <div className="col-lg-6 p-0 pl-4 col-md-6 col-sm-12 ">
+            <img src={WeD2} alt="Wed2" className="img-container w-100 pr-5" />
+          </div>
+          <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left  ">
+            <h1 className="mb-5" style={{ fontWeight: 400, fontSize: "3.3rem", fontFamily: "Barlow,sans-serif" }}>  <span style={{ color: '#160A54', fontFamily: "Barlow,sans-serif" }}>Make the  </span><span style={{ color: '#04642D' }}> career move <br />
+              you want</span></h1>
+            <div className="row mt-3 font20 align-items-center">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18"> Get instant job recommendations tailored to your skills and goals</p></div>
+            </div>
+            <div className="row mt-3 font20 align-items-center">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18"> Gain exposure to a range of companies and job types: fully
+                remote, <br /> hybrid or on-site, and contract or permanent</p></div>
+            </div>
+            <div className="row mt-3 font20 align-items-center">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
+              <div className="col-11">
+                <p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18"> Access competitive pay, benefits, and free online training and
+                  <br />development</p>
+
               </div>
-              <button className="Preview_candidates_btn mr-4 mt-5" style={{ backgroundColor: "#160A54" }} onClick={() => navigate('/#coursesWeOffer')} >Get job matches</button>
-              <button className="hire_now_btn" style={{ color: "#160A54", borderColor: "#160A54" }} onClick={() => navigate('/#coursesWeOffer')} >Learn more</button>
+            </div>
+            <button className="Preview_candidates_btn mr-4 mt-5" style={{ backgroundColor: "#160A54", fontFamily: "Barlow,sans-serif" }} onClick={() => navigate('/#coursesWeOffer')} >Get job matches</button>
+            <button className="hire_now_btn" style={{ color: "#160A54", borderColor: "#160A54", fontFamily: "Barlow,sans-serif" }} onClick={() => navigate('/#coursesWeOffer')} >Learn more</button>
+          </div>
+        </div>
+      </div>
+
+
+      {/* Third Row */}
+      <div className="row align-items-center p-sm-5">
+        {/* Column with alternating images (Left) */}
+        <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="d-flex flex-column align-items-end">
+            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
+              <img src={left1} alt="Left 1" style={{ width: "30%" }} />
+            </div>
+            <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
+              <img src={left2} alt="Left 2" style={{ width: "35%" }} />
+            </div>
+            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
+              <img src={left3} alt="Left 3" style={{ width: "40%" }} />
+            </div>
+            <div className={`col-12 text-left ${animate ? 'animated-right' : ''} pl-4`}>
+              <img src={left4} alt="Left 4" />
+            </div>
+            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
+              <img src={left5} alt="Left 5" style={{ width: "30%" }} />
             </div>
           </div>
         </div>
 
-        {/* Third Row */}
-        <div className="row align-items-center p-sm-5">
-          {/* Column with alternating images (Left) */}
-          <div className="col-lg-4 col-md-4 col-sm-12">
-            <div className="d-flex flex-column align-items-end">
-              <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-                <img src={left1} alt="Left 1" style={{ width: "30%" }} />
-              </div>
-              <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-                <img src={left2} alt="Left 2" style={{ width: "35%" }} />
-              </div>
-              <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-                <img src={left3} alt="Left 3" style={{ width: "40%" }} />
-              </div>
-              <div className={`col-12 text-left ${animate ? 'animated-right' : ''} pl-4`}>
-                <img src={left4} alt="Left 4" />
-              </div>
-              <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-                <img src={left5} alt="Left 5" style={{ width: "30%" }} />
-              </div>
-            </div>
-          </div>
+        {/* Middle Column with Text */}
+        <div className="col-lg-4 col-md-4 col-sm-12 text-center">
+          <h1 className="mb-1 text-center" style={{ fontWeight: 700, fontSize: "1.7rem", fontFamily: "Inter, serif" }}>
+            <span style={{ color: '#160A54' }}>JOIN THE BEST</span>
+          </h1>
 
-          {/* Middle Column with Text */}
-          <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-            <h1 className="mb-1 text-center" style={{ fontWeight: 700, fontSize: "1.7rem", fontFamily: "Inter, serif" }}>
-              <span style={{ color: '#160A54' }}>JOIN THE BEST</span>
+          <div className="mx-auto d-flex align-items-center justify-content-center" style={{ width: '100%' }}>
+            <h1 className="mb-5 text-center" style={{ fontWeight: 700, fontSize: "3.4rem" }}>
+              <span style={{ color: '#160A54', fontFamily: "Inria Serif, serif" }}>
+                Powering 100,000+ of the best customer experiences
+              </span>
             </h1>
-
-            <div className="mx-auto d-flex align-items-center justify-content-center" style={{ width: '100%' }}>
-              <h1 className="mb-5 text-center" style={{ fontWeight: 700, fontSize: "3.4rem" }}>
-                <span style={{ color: '#160A54', fontFamily: "Inria Serif, serif" }}>
-                  Powering 100,000+ of the best customer experiences
-                </span>
-              </h1>
-            </div>
-            <div className="text-center">
-              <button
-                className="Preview_candidates_btn mr-4"
-                style={{ backgroundColor: "#04642D", padding: '13px 32px', fontSize: '1.2rem' }}
-                onClick={() => navigate('/#coursesWeOffer')}
-              >
-                Free Trial
-              </button>
-              <button
-                className="hire_now_btn"
-                style={{ color: "#04642D", borderColor: "#04642D", padding: '12px 16px', fontSize: '1.2rem' }}
-                onClick={() => navigate('/#coursesWeOffer')}
-              >
-                Get Free Demo
-              </button>
-            </div>
           </div>
+          <div className="text-center">
+            <button
+              className="Preview_candidates_btn mr-4"
+              style={{ backgroundColor: "#04642D", padding: '13px 32px', fontSize: '1.2rem' }}
+              onClick={() => navigate('/#coursesWeOffer')}
+            >
+              Free Trial
+            </button>
+            <button
+              className="hire_now_btn"
+              style={{ color: "#04642D", borderColor: "#04642D", padding: '12px 16px', fontSize: '1.2rem' }}
+              onClick={() => navigate('/#coursesWeOffer')}
+            >
+              Get Free Demo
+            </button>
+          </div>
+        </div>
 
-          {/* Column with alternating images (Right) */}
-          <div className="col-lg-4 col-md-4 col-sm-12">
-            <div className="d-flex flex-column align-items-start">
-              <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-                <img src={right1} alt="Right 1" style={{ marginBottom: '20px' }} />
-              </div>
-              <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-                <img src={right2} alt="Right 2" style={{ marginBottom: '20px' }} />
-              </div>
-              <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-                <img src={right3} alt="Right 3" style={{ marginBottom: '20px' }} />
-              </div>
-              <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-                <img src={right4} alt="Right 4" style={{ marginBottom: '20px' }} />
-              </div>
-              <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-                <img src={right5} alt="Right 5" style={{ marginBottom: '20px' }} />
-              </div>
+        {/* Column with alternating images (Right) */}
+        <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="d-flex flex-column align-items-start">
+            <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
+              <img src={right1} alt="Right 1" style={{ marginBottom: '20px' }} />
+            </div>
+            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
+              <img src={right2} alt="Right 2" style={{ marginBottom: '20px' }} />
+            </div>
+            <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
+              <img src={right3} alt="Right 3" style={{ marginBottom: '20px' }} />
+            </div>
+            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
+              <img src={right4} alt="Right 4" style={{ marginBottom: '20px' }} />
+            </div>
+            <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
+              <img src={right5} alt="Right 5" style={{ marginBottom: '20px' }} />
             </div>
           </div>
         </div>
