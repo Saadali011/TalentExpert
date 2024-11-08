@@ -9,7 +9,9 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.25);
     border-radius: 0 0 100px 100px; */
   }
-  
+*{
+  font-family: "Barlow",sans-serif;
+}
 .gradientCircle:before {
     content: "";
     position: absolute;
@@ -31,6 +33,7 @@
   padding: 30px 60px !important;
 }
 
+
 @media (max-width: 576px) {
   .Info_container {
     font-size: 25px !important;
@@ -39,18 +42,122 @@
 }
 @media (max-width: 1199px) and (min-width: 1023px)  {
   .Info_container {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    padding: 40px 86px !important;
 
   }
+  
+
+  .Info_container h6{
+    text-align: center !important;
+    justify-content:  center !important;
+    align-items:  center !important;
+    font-size: 19px !important;
+    /* width: 160px;
+        height: 47px; */
+
+    /* font-weight: ; */
+    /* padding: 4px !important; */
+  }
+  .Info_container h5{
+    text-align: center !important;
+    justify-content:  center !important;
+    margin-bottom: 10px;
+    align-items:  center !important;
+    font-size: 58px !important;
+    /* width: 160px;
+    height: 47px; */
+
+    /* padding: 4px !important;  */
+  }
+  .dynamic_padding{
+    padding: 0px !important;
+    margin: 0 !important;
+  }
+  .cardrow{
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  
 }
 @media (max-width: 1024px) and (min-width: 920px)  {
   .Info_container {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    padding: 50px 85px !important;
 
   }
+  
+
+  .Info_container h6{
+    text-align: center !important;
+    justify-content:  center !important;
+    align-items:  center !important;
+    font-size: 18px !important;
+    width: 160px;
+        height: 47px;
+
+    /* font-weight: ; */
+    /* padding: 4px !important; */
+  }
+  .Info_container h5{
+    text-align: center !important;
+    justify-content:  center !important;
+    margin-bottom: 10px;
+    align-items:  center !important;
+    font-size: 41px !important;
+    width: 160px;
+    height: 47px;
+
+    /* padding: 4px !important;  */
+  }
+  .dynamic_padding{
+    padding: 0px !important;
+    margin: 0 !important;
+  }
+  
 }
 @media (max-width: 919px) and (min-width: 768px)  {
   .Info_container {
-
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    padding: 40px 50px !important
   }
+  
+
+  .Info_container h6{
+    text-align: center !important;
+    justify-content:  center !important;
+    align-items:  center !important;
+    font-size: 18px !important;
+    width: 152px;
+    height: 40px;
+
+    /* font-weight: ; */
+    /* padding: 4px !important; */
+  }
+  .Info_container h5{
+    text-align: center !important;
+    justify-content:  center !important;
+    margin-bottom: 10px;
+    align-items:  center !important;
+    font-size: 41px !important;
+    width: 152px;
+    height: 40px;
+
+    /* padding: 4px !important;  */
+  }
+  .dynamic_padding{
+    padding: 0px !important;
+    margin: 0 !important;
+  }
+  .cardrow{
+    /* margin-left: 15px !important;
+    margin-right: 15px !important; */
+  }
+  
+
 }
 @media (max-width: 767px) and (min-width: 700px)  {
   .Info_container {

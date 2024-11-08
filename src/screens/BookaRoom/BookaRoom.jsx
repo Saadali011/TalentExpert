@@ -9,7 +9,7 @@ import alrazi from '../../assets/BookaScreen/al-razi.jpg';
 import alFarabi from '../../assets/BookaScreen/al-farabi.jpg';
 import alkhawarzmi from '../../assets/BookaScreen/al-khawarizmi.jpg';
 import alkindi from '../../assets/BookaScreen/al-kindi.jpg';
-import heart from '../../assets/BookaScreen/vanue at the heart of the city.png';
+import Plantation from '../../assets/BookaScreen/Plantation.png';
 import wifi from '../../assets/BookaScreen/wifi.png'
 import tech from '../../assets/BookaScreen/high tech learning.png'
 import pray from '../../assets/BookaScreen/prayer area.png'
@@ -193,24 +193,27 @@ export default function BookaRoom() {
             <div
                 className="container-fluid py-4 "
                 style={{
-                    backgroundColor: '#5A8C75',
+                    backgroundColor: '#FFF9F0',
                     backgroundImage: `url(${wave2})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="row d-flex justify-content-center align-items-center py-4">
+                <div className="row d-flex justify-content-center align-items-center pb-sm-4">
                     <div className="col-lg-12 col-md-8 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center text-white ">
-                        <h1 className="pb-4 pb-lg-0" id="generic_heading_BookRoom">What's Included ?</h1>
-                        <p className="col-lg-8 col-md-12 pt-2 mt-4 p-0">Our state-of-the-art learning facility includes purpose-built training rooms, assessment centers, meeting rooms, labs, in-house amphitheater, podcast, and recording setup for e-Learning, high-end restaurant, networking event spaces and a full-service conference arena.</p>
+                        <h1 className="pb-4 pb-lg-0" id="our_services">Our&nbsp;<span id="our_services" style={{ color: "#04642D", fontFamily: "Barlow,sans-serif" }}>services</span></h1>
+                        <h6 className="col-lg-6 col-md-12 pt-2 mt-4 px-4 " id='our_services_paragraph'>Talent Expertz (TE) goes beyond quick fixes, providing meticulously tailored, accessible HR solutions for lasting impact. Our services include
+                        </h6>
                     </div>
                 </div>
+
+                {/* Mobile View */}
                 <div className='d-sm-block d-md-none d-lg-none '>
                     <div className="col-12 d-flex justify-content-center align-items-center p-0 my-5">
                         <div className="col-lg-4 col-md-4 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4" style={{ borderRadius: '24px' }}>
                             <div className="col-sm-5 col-lg-3">
-                                <img src={heart} alt="" style={{ width: '55px', height: '55px' }} />
+                                <img src={Plantation} alt="" style={{ width: '55px', height: '55px' }} />
                             </div>
                             <h4 className="my-2 ">Venue At The Heart Of The City –
                             </h4>
@@ -250,23 +253,153 @@ export default function BookaRoom() {
                         </div>
                     </div>
                 </div>
+                {/* Mobile View */}
 
-                <div className="col-12 justify-content-center align-items-center py-4 d-none d-md-flex d-lg-flex">
-                    <div className="col-lg-4 col-md-4 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 " style={{ borderRadius: '24px' }}>
-                        <div className="col-md-6 col-lg-3">
-                            <img src={heart} alt="" style={{ width: '55px', height: '55px' }} />
+                {/* Computer View */}
+                <div className=" col-12 justify-content-center align-items-center py-4 d-none d-md-flex d-lg-flex mx-5 p-0 " style={{ gap: "50px" }}>
+
+                    {/* <div className="col-lg-3 col-md-3 col-sm-12 bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3 " style={{ borderRadius: '24px', height:"215px",}}>
+                        <div className="col-md-6 col-lg-5 p-0 " >
+                            <img src={Plantation} alt="" id="services_card_img" />
                         </div>
-                        <h4 className="my-2 ">Venue At The Heart Of The City –</h4>
-                        <p className="line-height-sm">Located inside NASTP, Karachi, with shaded parking space for up to 500 cars!</p>
+                        <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5 >
+                        <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out. </p>
+                    </div> */}
+                    <div className="col-lg-3 col-md-3 col-sm-10 d-flex justify-content-start align-items-start p-0" style={{ backgroundColor: '#FFF9F0' }}>
+                        <div className="bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3"
+                         style={{ borderRadius: '18px', width: '85%', height: "219px" ,  boxShadow: '18px 15px 35px 0 rgba(22, 10, 84, 0.15)' }}>
+                            <div className="col-md-6 col-lg-5 p-0 pt-3">
+                                <img src={Plantation} alt="" id="services_card_img" />
+                            </div>
+                            <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5>
+                            <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">
+                                Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out.
+                            </p>
+                        </div>
                     </div>
-                    <div className="col-lg-4 col-md-4 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 ml-5" style={{ borderRadius: '24px' }}>
+                    <div className="col-lg-3 col-md-3 col-sm-10 d-flex justify-content-start align-items-start p-0" style={{ backgroundColor: '#FFF9F0' }}>
+                        <div className="bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3"
+                         style={{ borderRadius: '18px', width: '85%', height: "219px" ,  boxShadow: '18px 15px 35px 0 rgba(22, 10, 84, 0.15)' }}>
+                            <div className="col-md-6 col-lg-5 p-0 pt-3">
+                                <img src={Plantation} alt="" id="services_card_img" />
+                            </div>
+                            <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5>
+                            <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">
+                                Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-10 d-flex justify-content-start align-items-start p-0" style={{ backgroundColor: '#FFF9F0' }}>
+                        <div className="bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3"
+                         style={{ borderRadius: '18px', width: '85%', height: "219px" ,  boxShadow: '18px 15px 35px 0 rgba(22, 10, 84, 0.15)' }}>
+                            <div className="col-md-6 col-lg-5 p-0 pt-3">
+                                <img src={Plantation} alt="" id="services_card_img" />
+                            </div>
+                            <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5>
+                            <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">
+                                Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* <div className="col-lg-3 col-md-3 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 ml-5" style={{ borderRadius: '24px' }}>
                         <div className="col-md-6 col-lg-3">
                             <img src={pray} alt="" style={{ width: '55px', height: '55px' }} />
                         </div>
                         <h4 className="my-2 ">Segregated Prayer Area –</h4>
                         <p className="line-height-sm">Neat and tidy, for ladies and gentlemen, with ample rest rooms on every floor!</p>
-                    </div>
+                    </div> */}
+                    {/* <div className="col-lg-3 col-md-3 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 ml-5" style={{ borderRadius: '24px' }}>
+                        <div className="col-md-6 col-lg-3">
+                            <img src={pray} alt="" style={{ width: '55px', height: '55px' }} />
+                        </div>
+                        <h4 className="my-2 ">Segregated Prayer Area –</h4>
+                        <p className="line-height-sm">Neat and tidy, for ladies and gentlemen, with ample rest rooms on every floor!</p>
+                    </div> */}
+
                 </div>
+                <div className=" col-12 justify-content-center align-items-center py-4 d-none d-md-flex d-lg-flex mx-5 p-0 " style={{ gap: "50px" }}>
+
+                    {/* <div className="col-lg-3 col-md-3 col-sm-12 bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3 " style={{ borderRadius: '24px', height:"215px",}}>
+    <div className="col-md-6 col-lg-5 p-0 " >
+        <img src={Plantation} alt="" id="services_card_img" />
+    </div>
+    <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5 >
+    <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out. </p>
+</div> */}
+                    <div className="col-lg-3 col-md-3 col-sm-10 d-flex justify-content-start align-items-start p-0" style={{ backgroundColor: '#FFF9F0' }}>
+                        <div className="bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3" 
+                         style={{ borderRadius: '18px', width: '85%', height: "219px" ,  boxShadow: '18px 15px 35px 0 rgba(22, 10, 84, 0.15)' }}>
+                            <div className="col-md-6 col-lg-5 p-0 pt-3">
+                                <img src={Plantation} alt="" id="services_card_img" />
+                            </div>
+                            <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5>
+                            <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">
+                                Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-10 d-flex justify-content-start align-items-start p-0" style={{ backgroundColor: '#FFF9F0' }}>
+                        <div className="bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3" 
+                         style={{ borderRadius: '18px', width: '85%', height: "219px" ,  boxShadow: '18px 15px 35px 0 rgba(22, 10, 84, 0.15)' }}>
+                            <div className="col-md-6 col-lg-5 p-0 pt-3">
+                                <img src={Plantation} alt="" id="services_card_img" />
+                            </div>
+                            <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5>
+                            <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">
+                                Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-3 col-sm-10 d-flex justify-content-start align-items-start p-0" style={{ backgroundColor: '#FFF9F0' }}>
+                        <div className="bg-white d-flex flex-column justify-content-start align-items-start text-start text-black p-3" 
+                         style={{ borderRadius: '18px', width: '85%', height: "219px" ,  boxShadow: '18px 15px 35px 0 rgba(22, 10, 84, 0.15)' }}>
+                            <div className="col-md-6 col-lg-5 p-0 pt-3">
+                                <img src={Plantation} alt="" id="services_card_img" />
+                            </div>
+                            <h5 className="mb-2 mt-1 " id="services_card_title">C-suite Placement Services</h5>
+                            <p className="col-md-11 col-lg-11 line-height-sm p-0" id="services_card_desc">
+                                Our team is fully prepared to make finding top executives easy! We respond quickly, provide top-notch service, and know the industry inside and out.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* <div className="col-lg-3 col-md-3 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 ml-5" style={{ borderRadius: '24px' }}>
+    <div className="col-md-6 col-lg-3">
+        <img src={pray} alt="" style={{ width: '55px', height: '55px' }} />
+    </div>
+    <h4 className="my-2 ">Segregated Prayer Area –</h4>
+    <p className="line-height-sm">Neat and tidy, for ladies and gentlemen, with ample rest rooms on every floor!</p>
+</div> */}
+                    {/* <div className="col-lg-3 col-md-3 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 ml-5" style={{ borderRadius: '24px' }}>
+    <div className="col-md-6 col-lg-3">
+        <img src={pray} alt="" style={{ width: '55px', height: '55px' }} />
+    </div>
+    <h4 className="my-2 ">Segregated Prayer Area –</h4>
+    <p className="line-height-sm">Neat and tidy, for ladies and gentlemen, with ample rest rooms on every floor!</p>
+</div> */}
+
+                </div>
+                {/* <div className="col-12 justify-content-center align-items-center py-4 d-none d-md-flex d-lg-flex">
+                    <div className="col-lg-4 col-md-4 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4" style={{ borderRadius: '24px' }}>
+                        <div className="col-md-6 col-lg-3">
+                            <img src={wifi} alt="" style={{ width: '55px', height: '55px' }} />
+                        </div>
+                        <h4 className="my-2  " style={{ color: 'black !important' }} >24/7 Wi-Fi –</h4>
+                        <p className="line-height-sm">Obviously, it’s not a luxury – it’s a necessity, because we are serving a global world!</p>
+                    </div>
+                    <div className="col-lg-4 col-md-4 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 ml-5" style={{ borderRadius: '24px' }}>
+                        <div className="col-md-6 col-lg-3">
+                            <img src={tech} alt="" style={{ width: '55px', height: '55px' }} />
+                        </div>
+                        <h4 className="my-2 ">High-Tech Learning Venue –</h4>
+                        <p className="line-height-sm">Of Course, we are a tech company, and we know the importance of tech amenities!</p>
+                    </div>
+                </div> */}
+                {/* Computer View */}
+
+
+                {/* 
                 <div className='d-none d-lg-block' style={{
                     width: '10px',
                     height: '10px',
@@ -290,23 +423,8 @@ export default function BookaRoom() {
                         }}>
 
                     </div>
-                </div>
-                <div className="col-12 justify-content-center align-items-center py-4 d-none d-md-flex d-lg-flex">
-                    <div className="col-lg-4 col-md-4 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4" style={{ borderRadius: '24px' }}>
-                        <div className="col-md-6 col-lg-3">
-                            <img src={wifi} alt="" style={{ width: '55px', height: '55px' }} />
-                        </div>
-                        <h4 className="my-2  " style={{ color: 'black !important' }} >24/7 Wi-Fi –</h4>
-                        <p className="line-height-sm">Obviously, it’s not a luxury – it’s a necessity, because we are serving a global world!</p>
-                    </div>
-                    <div className="col-lg-4 col-md-4 col-sm-12 bg-white d-flex flex-column justify-content-center align-items-center text-center text-black p-4 ml-5" style={{ borderRadius: '24px' }}>
-                        <div className="col-md-6 col-lg-3">
-                            <img src={tech} alt="" style={{ width: '55px', height: '55px' }} />
-                        </div>
-                        <h4 className="my-2 ">High-Tech Learning Venue –</h4>
-                        <p className="line-height-sm">Of Course, we are a tech company, and we know the importance of tech amenities!</p>
-                    </div>
-                </div>
+                </div> */}
+
             </div>
 
             <div className="container-fluid py-4" style={{ position: 'relative', zIndex: 1 }}>

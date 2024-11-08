@@ -70,7 +70,7 @@ export default function OurTrainer() {
     ],
   };
 
-  const { TrainerContainer } = style;
+  const { TrainerContainer,fontpaddingleft } = style;
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -79,7 +79,7 @@ export default function OurTrainer() {
 
   return (
     <div
-      className="container-sm-fluid py-5  m-sm-0 bg-sm-none "
+      className="container-sm-fluid pt-5 pb-4  m-sm-0 bg-sm-none "
 
     >
       <div className="container-sm-fluid "
@@ -111,34 +111,36 @@ export default function OurTrainer() {
           padding: 0,
         }}
       >
-        <div className="row align-items-center pb-5 pr-sm-5 ">
-          <div className="col-lg-6  p-0 pl-sm-4 col-md-6 col-sm-12 ">
-            <img src={WeD9} alt="" className="img-container w-100 pr-sm-5  " />
+        <div className="row align-items-center pb-sm-5 pr-sm-5 ">
+          <div className="col-lg-6  p-0 pl-sm-4 col-md-6 col-sm-12 pr-4">
+            <img src={WeD9} alt="" className="img-container w-100 pr-sm-3  " />
           </div>
           {/* <div className="col-1"></div> */}
-          <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left  ">
-            <h1 style={{ fontWeight: 400, fontSize: "3.3rem" }} className='pl-sm-2 mb-sm-5 pb-sm-5'>  <span style={{ color: '#160A54' }}>Find your   </span><span style={{ color: '#04642D' }}> next hire</span></h1>
+          <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-sm-center text-lg-left  ">
+            <h1 style={{ fontWeight: 400, fontSize: "3.4rem"  ,fontFamily: "Barlow,sans-serif"}} className='pl-sm-2 mt-2'>  <span style={{ color: '#160A54' }}>Find your   </span><span style={{ color: '#04642D' }}> next hire</span></h1>
+            <div className="d-sm-block d-none" style={{ height: 80 }}></div>
 
-            <div className="row mt-3 font20 align-items-center pl-sm-2">
-              <div className="col-1"><i className="fa-regular fa-circle-check mr-4  pl-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
-              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18 pl-3"> Access a curated pool of qualified, vetted candidates</p></div>
-            </div>
-
-            <div className="row mt-3 font20 align-items-center pl-sm-2">
-              <div className="col-1"><i className="fa-regular fa-circle-check mr-5 pr-5  pl-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
-              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18 pl-3"> Share your job requirements to get instant matches</p></div>
+            <div className="row mt-3 font21 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4  pl-sm-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F'   ,fontFamily: "Barlow,sans-serif"}} className="font19x pl-4 fontpaddingleft"> Access a curated pool of qualified, vetted candidates</p></div>
             </div>
             <div className="row mt-3 font20 align-items-center pl-sm-2">
-              <div className="col-1"><i className="fa-regular fa-circle-check mr-5 pr-5 pl-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-5 pr-5  pl-sm-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F'   ,fontFamily: "Barlow,sans-serif"}} className="font19x pl-4 fontpaddingleft"> Share your job requirements to get instant matches</p></div>
+            </div>
+            <div className="row mt-3 font20 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-5 pr-5 pl-sm-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#3DCA89' }}></i></div>
               <div className="col-11">
-                <p style={{ fontWeight: 400, color: '#3F3F3F' }} className="font18 pl-3"> Collaborate with our recruitment specialists for
+                <p style={{ fontWeight: 400, color: '#3F3F3F'   ,fontFamily: "Barlow,sans-serif"}} className="font19x pl-4 fontpaddingleft"> Collaborate with our recruitment specialists for
                   seamless hiring</p>
 
               </div>
             </div> 
-            <div className="row pl-sm-5 pb-5">
-            <button className="Preview_candidates_btn  mr-4 mt-5" onClick={() => navigate('/#coursesWeOffer')} >Preview candidates</button>
-            <button className="hire_now_btn   mt-5" onClick={() => navigate('/#coursesWeOffer')} >Hire now</button>
+
+           
+            <div className="row pb-sm-5 pl-3 mt-3 ml-sm-2 mt-sm-2 pt-sm-5 align-items-center">
+            <button className="Preview_candidates_btn  mr-4 mt-sm-1 " style={{  fontFamily: "Barlow,sans-serif"}} onClick={() => navigate('/#coursesWeOffer')} >Preview candidates</button>
+            <button className="hire_now_btn  mt-sm-1   " style={{  fontFamily: "Barlow,sans-serif"}}  onClick={() => navigate('/#coursesWeOffer')} >Hire now</button>
             </div>
           </div>
         </div>
@@ -158,83 +160,88 @@ export default function OurTrainer() {
           padding: 0,
         }}>
         <div className="row align-items-center pb-5">
-          <div className="col-lg-6 p-0 pl-4 col-md-6 col-sm-12 ">
-            <img src={WeD2} alt="Wed2" className="img-container w-100 pr-5" />
+          <div className="col-lg-6  p-0 pl-sm-4 col-md-6 col-sm-12 pr-4">
+            <img src={WeD2} alt="Wed2" className="img-container w-100 pr-sm-3 " />
           </div>
-          <div className="pl-sm-5 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-center text-lg-left  ">
-            <h1 className="mb-5" style={{ fontWeight: 400, fontSize: "3.3rem", fontFamily: "Barlow,sans-serif" }}>  <span style={{ color: '#160A54', fontFamily: "Barlow,sans-serif" }}>Make the  </span><span style={{ color: '#04642D' }}> career move <br />
+          <div className="pl-sm-4 col-lg-6 col-md-6 col-sm-12 pb-4 pb-lg-0 text-sm-center text-lg-left  ">
+            <h1 className="pl-sm-2 mb-sm-5 pb-sm-5 mt-2" style={{ fontWeight: 400, fontSize: "3.3rem", fontFamily: "Barlow,sans-serif" }}>  <span style={{ color: '#160A54', fontFamily: "Barlow,sans-serif" }}>Make the  </span><span style={{ color: '#04642D' }}> career move <br />
               you want</span></h1>
-            <div className="row mt-3 font20 align-items-center">
-              <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
-              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18"> Get instant job recommendations tailored to your skills and goals</p></div>
+            <div className="row mt-3 font20 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4  pl-sm-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18 pl-4"> Get instant job recommendations tailored to your skills and goals</p></div>
             </div>
-            <div className="row mt-3 font20 align-items-center">
-              <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
-              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18"> Gain exposure to a range of companies and job types: fully
-                remote, <br /> hybrid or on-site, and contract or permanent</p></div>
+            <div className="row mt-3 font20 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4  pl-sm-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
+              <div className="col-11"><p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18 pl-4 pr-sm-5"> Gain exposure to a range of companies and job types: fully
+                remote,  hybrid or on-site, and contract or permanent</p></div>
             </div>
-            <div className="row mt-3 font20 align-items-center">
-              <div className="col-1"><i className="fa-regular fa-circle-check mr-4" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
+            <div className="row mt-3 font20 align-items-center pl-sm-2">
+              <div className="col-1"><i className="fa-regular fa-circle-check mr-4  pl-sm-2" style={{ fontWeight: '200 !important', fontSize: 40, color: '#160A54' }}></i></div>
               <div className="col-11">
-                <p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18"> Access competitive pay, benefits, and free online training and
-                  <br />development</p>
+                <p style={{ fontWeight: 400, color: '#3F3F3F', fontFamily: "Barlow,sans-serif" }} className="font18 pl-4 pr-sm-5"> Access competitive pay, benefits, and free online training and
+                  development</p>
 
               </div>
             </div>
-            <button className="Preview_candidates_btn mr-4 mt-5" style={{ backgroundColor: "#160A54", fontFamily: "Barlow,sans-serif" }} onClick={() => navigate('/#coursesWeOffer')} >Get job matches</button>
-            <button className="hire_now_btn" style={{ color: "#160A54", borderColor: "#160A54", fontFamily: "Barlow,sans-serif" }} onClick={() => navigate('/#coursesWeOffer')} >Learn more</button>
+            <div className="row pb-sm-5 pl-3 mt-3 ml-sm-2 mt-sm-2 pt-sm-5 align-items-center">
+            <button className="Preview_candidates_btn  mr-4 mt-sm-1" style={{ backgroundColor: "#160A54", fontFamily: "Barlow,sans-serif" }} onClick={() => navigate('/#coursesWeOffer')} >Get job matches</button>
+            <button className="hire_now_btn   mt-sm-1   " style={{ color: "#160A54", borderColor: "#160A54", fontFamily: "Barlow,sans-serif" }} onClick={() => navigate('/#coursesWeOffer')} >Learn more</button>
+            </div>
           </div>
         </div>
       </div>
 
 
       {/* Third Row */}
-      <div className="row align-items-center p-sm-5">
+      <div className='container-fluid d-md-block d-none p-0 m-0'>
+      <div className="row align-items-center p-sm-4  pr-0  ">
         {/* Column with alternating images (Left) */}
-        <div className="col-lg-4 col-md-4 col-sm-12">
-          <div className="d-flex flex-column align-items-end">
-            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-              <img src={left1} alt="Left 1" style={{ width: "30%" }} />
+        <div className="col-lg-4 col-md-4 col-sm-12  pr-sm-5 pl-sm-5 ">
+          <div className="d-flex flex-column align-items-end pr-2">
+            <div className={`col-12 text-right pl-0    pr-4 ${animate ? 'animated-left' : ''}`}>
+              <img src={left1} alt="Left 1" style={{ width: "43%" }} />
             </div>
-            <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-              <img src={left2} alt="Left 2" style={{ width: "35%" }} />
+            <div className={`col-12 text-left pl-sm-2 p-0 ${animate ? 'animated-right' : ''}`}>
+              <img src={left2} alt="Left 2" style={{ width: "35%", }} />
             </div>
-            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-              <img src={left3} alt="Left 3" style={{ width: "40%" }} />
+            <div className={`col-12 text-right pr-0 pl-0 mb-5 ${animate ? 'animated-left' : ''}`}>
+              <img src={left3} alt="Left 3" style={{ width: "58%" }} />
             </div>
-            <div className={`col-12 text-left ${animate ? 'animated-right' : ''} pl-4`}>
-              <img src={left4} alt="Left 4" />
+
+            <div className={`col-12 text-left p-0 ${animate ? 'animated-right' : ''}`}>
+              <img src={left4} alt="Left 4" style={{ width: "45%" }} />
             </div>
-            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-              <img src={left5} alt="Left 5" style={{ width: "30%" }} />
+            <div className={`col-12 text-right  pr-sm-3 pl-0 ${animate ? 'animated-left' : ''}`}>
+              <img src={left5} alt="Left 5" style={{ width: "38%" }} />
             </div>
           </div>
         </div>
 
         {/* Middle Column with Text */}
-        <div className="col-lg-4 col-md-4 col-sm-12 text-center">
-          <h1 className="mb-1 text-center" style={{ fontWeight: 700, fontSize: "1.7rem", fontFamily: "Inter, serif" }}>
+        <div className="col-lg-4 col-md-4 col-sm-12 text-center p-0 m-0">
+          <h1 className="mb-1 text-center" style={{ fontWeight: 700, fontSize: "1.25rem", fontFamily: "Barlow, sans-serif" }}>
             <span style={{ color: '#160A54' }}>JOIN THE BEST</span>
           </h1>
 
-          <div className="mx-auto d-flex align-items-center justify-content-center" style={{ width: '100%' }}>
-            <h1 className="mb-5 text-center" style={{ fontWeight: 700, fontSize: "3.4rem" }}>
-              <span style={{ color: '#160A54', fontFamily: "Inria Serif, serif" }}>
+          <div className="mx-auto d-flex align-items-center justify-content-center"style={{
+           
+          }} >
+            <span className="mb-5 text-center" style={{ lineHeight:1.17, fontWeight: 700, fontSize: "3rem",color: '#160A54', fontFamily: "Inria Serif, serif" }}>
+              
                 Powering 100,000+ of the best customer experiences
-              </span>
-            </h1>
+          
+            </span>
           </div>
-          <div className="text-center">
+          <div className="text-center ">
             <button
-              className="Preview_candidates_btn mr-4"
-              style={{ backgroundColor: "#04642D", padding: '13px 32px', fontSize: '1.2rem' }}
+              className="free_trail_btn mr-4"
+              style={{ backgroundColor: "#04642D", padding: '17px 32px', fontSize: '1.1rem',fontFamily: "Barlow, sans-serif" }}
               onClick={() => navigate('/#coursesWeOffer')}
             >
               Free Trial
             </button>
             <button
-              className="hire_now_btn"
-              style={{ color: "#04642D", borderColor: "#04642D", padding: '12px 16px', fontSize: '1.2rem' }}
+              className="get_free_demo"
               onClick={() => navigate('/#coursesWeOffer')}
             >
               Get Free Demo
@@ -243,25 +250,26 @@ export default function OurTrainer() {
         </div>
 
         {/* Column with alternating images (Right) */}
-        <div className="col-lg-4 col-md-4 col-sm-12">
-          <div className="d-flex flex-column align-items-start">
+        <div className="col-lg-4 col-md-4 col-sm-12  pr-sm-4 pl-sm-5">
+          <div className="d-flex flex-column align-items-start pl-4 ">
+            <div className={`col-12 text-left mb-4 ${animate ? 'animated-right' : ''}`}>
+              <img src={right1} alt="Right 1" style={{ width:"42%",}} />
+            </div>
+            <div className={`col-12 text-right pr-5 mb-4   ${animate ? 'animated-left' : ''}`}>
+              <img src={right2} alt="Right 2" style={{width:"22%" }} />
+            </div>
+            <div className={`col-12 text-left mb-5   ${animate ? 'animated-right' : ''}`}>
+              <img src={right3} alt="Right 3" style={{ width:"38%"}} />
+            </div>
+            <div className={`col-12 text-right p-0 mb-5 ${animate ? 'animated-left' : ''}`}>
+              <img src={right4} alt="Right 4" style={{ width:"50%",}} />
+            </div>
             <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-              <img src={right1} alt="Right 1" style={{ marginBottom: '20px' }} />
-            </div>
-            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-              <img src={right2} alt="Right 2" style={{ marginBottom: '20px' }} />
-            </div>
-            <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-              <img src={right3} alt="Right 3" style={{ marginBottom: '20px' }} />
-            </div>
-            <div className={`col-12 text-right ${animate ? 'animated-left' : ''}`}>
-              <img src={right4} alt="Right 4" style={{ marginBottom: '20px' }} />
-            </div>
-            <div className={`col-12 text-left ${animate ? 'animated-right' : ''}`}>
-              <img src={right5} alt="Right 5" style={{ marginBottom: '20px' }} />
+              <img src={right5} alt="Right 5" style={{ width:"42%", }} />
             </div>
           </div>
         </div>
+      </div>
       </div>
 
 
